@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Design</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .plant-container {
+            position: relative;
+            width: 200px;
+            height: 400px;
+        }
+
+        .pot {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 80px;
+            background-color: #8B4513;
+            border-top-left-radius: 60px 20px;
+            border-top-right-radius: 60px 20px;
+        }
+
+        .stem {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            width: 10px;
+            height: 150px;
+            background-color: #2E8B57;
+            transform: translateX(-50%);
+        }
+
+        .leaf {
+            position: absolute;
+            width: 80px;
+            height: 40px;
+            background-color: #228B22;
+            border-radius: 50% 50% 0 0;
+        }
+
+        .leaf:nth-child(1) {
+            bottom: 150px;
+            left: calc(50% - 90px);
+            transform: rotate(-30deg);
+        }
+
+        .leaf:nth-child(2) {
+            bottom: 180px;
+            left: calc(50% - 70px);
+            transform: rotate(-15deg);
+        }
+
+        .leaf:nth-child(3) {
+            bottom: 200px;
+            left: calc(50% - 50px);
+        }
+
+        .leaf:nth-child(4) {
+            bottom: 220px;
+            left: calc(50% - 30px);
+            transform: rotate(15deg);
+        }
+
+        .leaf:nth-child(5) {
+            bottom: 250px;
+            left: calc(50% - 10px);
+            transform: rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="plant-container">
+        <div class="pot"></div>
+        <div class="stem"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+    </div>
+</body>
+</html>
